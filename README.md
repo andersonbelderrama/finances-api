@@ -4,11 +4,11 @@
 - [X] Configure Project
     - [X] Timezone, Locale, Language
     - [X] Sanctum, Pest
-    - [ ] Breeze
+    - [X] Breeze
 - [ ] Create Migrations and Models
 - [ ] Create Factories
 - [ ] Create Seeders
-- [ ] Create Authentication with Sanctum
+- [X] Create Authentication with Sanctum
 - [ ] Create Migrations and Models
 - [ ] Create Factories
 - [ ] Create Seeders
