@@ -17,7 +17,11 @@
 - [ ] Create Tests
 
 ## Entities
-
+- Users
+- Categories
+- Transactions
+- Accounts
+- Budgets
 
 ## Endpoints
 
