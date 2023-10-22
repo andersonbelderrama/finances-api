@@ -1,6 +1,6 @@
 # Finances API
 
-## Tasks
+### Tasks
     - [X] Configure Project
     - [ ] Create Migrations and Models
     - [ ] Create Factories
