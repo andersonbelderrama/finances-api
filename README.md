@@ -7,12 +7,12 @@
     - [X] Breeze
 - [X] Create Migrations and Models
     - [X] Migrations
-    - [ ] Models
+    - [X] Models
 - [X] Create Factories
 - [X] Create Seeders
 - [X] Create Authentication with Sanctum
-- [ ] Enums
-- [ ] Traits
+- [X] Enums
+- [X] Traits
 - [ ] Create Controllers
 - [ ] Create Requests
 - [ ] Create Resources
