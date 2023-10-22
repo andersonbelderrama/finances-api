@@ -3,6 +3,8 @@
 ## Tasks
 - [X] Configure Project
     - [X] Timezone, Locale, Language
+    - [X] Sanctum, Pest
+    - [ ] Breeze
 - [ ] Create Migrations and Models
 - [ ] Create Factories
 - [ ] Create Seeders
