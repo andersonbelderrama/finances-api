@@ -9,8 +9,10 @@
     - [X] Migrations
     - [ ] Models
 - [X] Create Factories
-- [ ] Create Seeders
+- [X] Create Seeders
 - [X] Create Authentication with Sanctum
+- [ ] Enums
+- [ ] Traits
 - [ ] Create Controllers
 - [ ] Create Requests
 - [ ] Create Resources
