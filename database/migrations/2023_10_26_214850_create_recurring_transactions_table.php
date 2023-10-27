@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Account;
 use App\Models\Category;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
@@ -14,19 +13,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transactions', function (Blueprint $table) {
+        Schema::create('recurring_transactions', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('description')->nullable();
             $table->decimal('amount', 10, 2);
-            $table->string('transaction_type')->comment('expense, income','transfer');
-            $table->boolean('is_investment')->default(false);
-            $table->string('status')->comment('pending, paid, overdue, received,');
-            $table->date('payment_date')->nullable();
+            $table->string('transaction_type')->comment('expense, income');
             $table->date('due_date')->nullable();
             $table->foreignIdFor(Category::class);
             $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Account::class);
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -36,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transactions');
+        Schema::dropIfExists('recurring_transactions');
     }
 };
