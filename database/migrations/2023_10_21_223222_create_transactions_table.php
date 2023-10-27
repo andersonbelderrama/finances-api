@@ -21,7 +21,7 @@ return new class extends Migration
             $table->decimal('amount', 10, 2);
             $table->string('transaction_type')->comment('expense, income','transfer');
             $table->boolean('is_investment')->default(false);
-            $table->string('status')->comment('pending, paid, overdue, received,');
+            $table->string('status')->comment('pending, paid, overdue, received');
             $table->date('payment_date')->nullable();
             $table->date('due_date')->nullable();
             $table->foreignIdFor(Category::class);

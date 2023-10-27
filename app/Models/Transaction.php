@@ -17,9 +17,10 @@ class Transaction extends Model
         'amount',
         'transaction_type',
         'is_investment',
-        'has_been_paid',
+        'status',
         'payment_date',
         'due_date',
+        'recurring_transaction_id',
         'category_id',
         'user_id',
         'account_id',
@@ -29,6 +30,7 @@ class Transaction extends Model
         'is_investment' => 'boolean',
         'has_been_paid' => 'boolean',
         'transaction_type' => TransactionType::class,
+        'status' => TransactionStatus::class,
     ];
 
     public function category() : BelongsTo
