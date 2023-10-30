@@ -15,6 +15,9 @@ Route::prefix('auth')->group(function () {
 Route::apiResource('categories', CategoryController::class)->middleware('auth:sanctum');
 
 
+
+
+//tests
 Route::get('/user', function() {
     return auth()->guest() ? 'Guest' : auth()->user()->name;
 })->middleware('auth:sanctum');
