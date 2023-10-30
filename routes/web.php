@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return ['Laravel' => app()->version()];
+});
+
+Route::get('/test-redis', function () {
+    $redis = Redis::connection(); // Obtém uma instância da conexão Redis padrão.
+
+    // Teste a conexão Redis com um simples comando.
+    $redis->set('test_key', 'Hello, Redis!');
+    $value = $redis->get('test_key');
+
+    return "Redis está funcionando: $value";
 });
 
 
